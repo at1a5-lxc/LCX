@@ -9,7 +9,7 @@ Compile Environment:Windows Codeblocks 10.05/Ubuntu 10.04 Codeblocks 8.10
 #include <signal.h>
 #include <stdint.h>
 
-#define BUF_LEN 8192
+#define BUF_LEN 81920
 
 #ifdef WIN32  //WINDOWS COMPILE
 
@@ -236,7 +236,7 @@ int lcx_slave(const char* ip1_str,unsigned short port1,const char* ip2_str,unsig
       {
         fprintf(stdout,"\n[-]  Connect %s Failed,Try Again..\n",out1);
         if(lcx_log)fprintf(lcx_log,"\n[-]  Connect %s Failed,Try Again..\n",out1),fflush(lcx_log);
-        delay(1000);
+        delay(5);
       }
       char c;
       if(recv(s[0],(char*)&c,1,MSG_PEEK)<=0)
@@ -269,7 +269,7 @@ int lcx_slave(const char* ip1_str,unsigned short port1,const char* ip2_str,unsig
       if(lcx_log)fprintf(lcx_log,"\n[-]  Create Socket Failed\n"),fflush(lcx_log);
       return -1;
     }
-    delay(1000);
+    delay(5);
   }
   return 0;
 }
