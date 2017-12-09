@@ -1,6 +1,7 @@
 /*
 Lcx: Port Data Transfer
 Compile Environment:Windows Codeblocks 10.05/Ubuntu 10.04 Codeblocks 8.10
+Compile Command : gcc lcx.c -o lcx -lpthread
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,7 +11,7 @@ Compile Environment:Windows Codeblocks 10.05/Ubuntu 10.04 Codeblocks 8.10
 #include <stdint.h>
 
 #define BUF_LEN 81920
-
+ 
 #ifdef WIN32  //WINDOWS COMPILE
 
 #include <winsock2.h>
