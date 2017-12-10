@@ -1,3 +1,4 @@
 In linux ,please use command below to compile.  
 gcc -o lcx lcx.c -lpthread  
-test2 
+<<<<<<< HEAD
+test12
