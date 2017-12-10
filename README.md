@@ -5,3 +5,4 @@ gcc -o lcx lcx.c -lpthread
 =======
 #This is dev branch  
 >>>>>>> dev
+ 
